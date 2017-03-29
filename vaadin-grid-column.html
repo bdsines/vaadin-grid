@@ -45,6 +45,8 @@ The `class` attribute is used to differentiate header and footer templates from 
           var parent = Polymer.dom(this).parentNode;
           if (parent && parent.localName === 'vaadin-grid-column-group') {
             return parent.resizable;
+          } else {
+            return false;
           }
         }
       },
